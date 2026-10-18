@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halaman tidak ditemukan</title>
+<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0a0a2b;color:#fff;font-family:system-ui,sans-serif;text-align:center;padding:24px}a{color:#8fb4ff}</style>
+</head><body><div>
+<h2>Halaman tidak ditemukan</h2>
+<p>Alamat yang dibuka kurang tepat.</p>
+<p><a id="home" href="./">Buka aplikasi</a></p>
+</div>
+<script>
+// Alamat GitHub Pages: https://akun.github.io/NAMA-REPO/ -> arahkan ke folder repo
+(function(){
+  var seg=location.pathname.split('/')[1];
+  if(location.hostname.indexOf('github.io')>-1&&seg){document.getElementById('home').href='/'+seg+'/'}
+})();
+</script></body></html>
